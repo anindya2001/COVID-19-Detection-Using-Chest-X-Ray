@@ -17,3 +17,11 @@ def predict_image_class(image_path):
     predicted_class_index = np.argmax(probabilities)
     predicted_class_name = class_names[predicted_class_index]
     return probabilities, predicted_class_index, predicted_class_name
+
+
+image_path = '/path/to/image/to/test'
+
+probabilities, predicted_class_index, predicted_class_name = predict_image_class(image_path)
+print('Probabilities:', probabilities)
+print('Predicted class index:', predicted_class_index)
+print('Predicted class name:', predicted_class_name)
